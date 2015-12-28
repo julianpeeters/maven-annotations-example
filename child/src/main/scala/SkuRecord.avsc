@@ -1,0 +1,14 @@
+{
+    "type" : "record",                
+    "name" : "SkuRecord",
+    "namespace" : "com.jp",
+    "fields" : [
+        { "name" : "skuKey", "type" : "string" }, // publisher-advertiser-skuid
+        { "name" : "taxonomyId", "type" : "int" },
+        { "name" : "alternateTaxonomyIds", "type" : { "type" : "array", "items" : "int" }, "default" : [] },
+        { "name" : "name", "type" : "string" },
+        { "name" : "brand", "type" : "string" },
+        { "name" : "description", "type" : "string" },
+        { "name" : "generatedSearchPhrases", "type" : { "type" : "array", "items" : "string" }, "default" : [] }
+    ]
+}
